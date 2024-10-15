@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 10px;
+}
+
+/* Responsive para pantallas grandes */
+@media (min-width:850px) {
+    .header h1 {
+        font-size: 120px;
+    }
+}
+
+.btn {
+    color: #000000;
+    background: #d2d2d2;
+    padding: 10px 40px;
+    text-decoration: none;
+    transition: background .5s;
+
+}
+
+.Header_general {
+    display: flex;
+    background: #d2d2d2;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+nav ul li {
+    color: #000;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn:hover,
+.nav ul li:hover {
+    background: #ffffff;
+    cursor: pointer;
+    transition: background .5s;
+}
+
+.portada {
+    background: url(./img/luca_morelli.png) center center;
+    background-size: cover;
+    height: 600px;
+}
+
+.portada .container {
+    position: relative;
+    top: 220px;
+}
+
+.portada p {
+    color: #000;
+    text-align: left;
+}
+
+.portada .btn {
+    margin: 10px 0 0;
+    float: left;
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: 430px;
+
+}
+
+.slide a {
+    overflow: hidden;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .8;
+    transition:  .5s ease, opacity .5s ease;
+}
+
+.slide img:hover {
+    cursor: crosshair;
+    transform: scale(1.2);
+    opacity: 1;
+    filter: contrast(120%);
+
+}
+
+footer {
+    background: #117bff;
+    height: 80px;
+    padding-bottom: 50px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+}
+
+/* diseño responsive para pantallas de celular */
+@media (max-width: 500px) {
+    .header h1 {
+        font-size: 50px;
+        line-height: 64px;
+    }
+
+    .main,
+    .portada {
+        padding: 0 30px;
+    }
+
+    .main img {
+        width: 100%;
+    }
+}
