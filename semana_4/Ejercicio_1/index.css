@@ -1,0 +1,13 @@
+.izq{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    list-style-type: none;
+}

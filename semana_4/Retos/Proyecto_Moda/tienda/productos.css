@@ -1,0 +1,42 @@
+/* Selectores globales */
+*::after, 
+*::before,
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Header_general {
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+not(header),img {
+    width: 100%;
+}
+
+.contenedor_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+nav a {
+
+    margin: 0 50px;
+
+}
+main {
+    margin-top: 60px;
+}
+
+.icono-tienda{
+    width: 40px;
+}

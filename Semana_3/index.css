@@ -1,0 +1,42 @@
+ 
+
+*{
+    background-color: aqua;
+    color: red ;
+}
+
+/*Selectores - Apuntan a la etiqueta HTML*/
+h1{
+    color: yellow;
+
+}
+
+div{
+    background-color: blue;
+}
+/*Clase*/
+.titulo{
+    background-color: brown;
+    color:aqua;
+    font-size: 50px;
+}
+
+.subtitulo{
+    background-color: yellow;
+    color:blue;
+    font-size: 100px;
+}
+
+/* CSS - Id*/
+#titulo{
+    background-color: green;
+    font-size: 200px;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+
+}
+ 

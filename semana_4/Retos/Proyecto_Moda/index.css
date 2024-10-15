@@ -1,0 +1,77 @@
+/* Selectores globales */
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* not(header),img {
+    width: 100%;
+} */
+
+.Header_general {
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.contenido-head {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.contenedor_enlaces nav{
+    display: flex;
+    text-align: center;
+    
+}
+.contenedor_enlaces a{
+    height: 100%;
+
+
+}
+
+main {
+    margin-top: 60px;
+    width: 100vh;
+}
+
+
+
+
+.contenedor_nombre_productos {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: auto 100px;
+}
+
+.contenido-inicio {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.contenedor-diseñador img {
+    width: 100%;
+    right: 0px;
+}
+
+footer {
+    background-color: blue;
+    height: 400px;
+    width: 100%;
+}
