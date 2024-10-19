@@ -29,12 +29,14 @@
     <!-- cuerpo   -->
 
     <main class="contacto">
+
         <form id="formulario" onsubmit="enviodedatos(event)"  action="" style="text-align: center;">
             <div><input type="text" name="" id="nombre" placeholder="Nombres" style="height: 30px;width: 400px;"></div>
             <div><input type="text" name="" id="apellido" placeholder="Apellidos" style="height: 30px;width: 400px;"></div>
             <div><input type="email" name="" id="correo" placeholder="e-mail" style="height: 30px;width: 400px;"></div>
-            <div><input type="number" name="" id="dinero" placeholder="contraseña" style="height: 30px;width: 400px;"></div>
-            <button type="submit">Enviar</button>
+            <div><input type="tel" name="" id="telefono" placeholder="+51..." style="height: 30px;width: 400px;"></div>
+            <div><textarea name="" id="mensaje" placeholder="Agrega los productos" cols="30" rows="10">Hola, deseo los siguientes productos: </textarea></div>
+            <button type="submit" onclick="enviarmensaje(event)">Enviar</button>
         </form>
     </main>
 
@@ -46,5 +48,6 @@
             </div>
         </section>
     </footer>
+    <script src="./productos/productos.js"></script>
 
 </html>

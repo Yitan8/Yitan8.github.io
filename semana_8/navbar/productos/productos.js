@@ -166,3 +166,31 @@ function renderizar(src,nombre,categoria,precio) {
     
     
 }
+
+function enviodedatos(event){
+
+    event.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const correo = document.getElementById('correo').value;
+    const telefono = document.getElementById('telefono').value;
+    const mensaje = document.getElementById('mensaje').value;
+    console.log('Se envió el formulario');
+    console.log(nombre);
+    console.log(apellido);
+    console.log(correo);
+    console.log(telefono);
+    console.log(mensaje);
+    
+
+
+}
+
+function enviarmensaje(event){
+    event.preventDefault();
+    const mensaje = document.getElementById('mensaje').value;
+    const mensajeWh = mensaje.replace(/ /g, '%20').replace(/\n/g, '%0');
+    
+    window.open(url="https://api.whatsapp.com/send?phone=+5199999999&text="+mensajeWh,'_blank');
+    console.log(mensajeWh);
+}

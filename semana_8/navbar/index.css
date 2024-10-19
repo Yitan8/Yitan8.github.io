@@ -221,7 +221,7 @@ header {
 }
 /* contacto.html */
 
-.contacto{
+.contacto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,17 +229,24 @@ header {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 
     
 }
-#formulario{
+#formulario{ 
     display: grid ;
-    grid-template-areas: repeat(2, 1fr);
+    justify-content: center;
     padding: 20px;
     gap: 10px;
     width: 100%;
 
 }
+#formulario button{
+    
+    text-align: center;
+}
+
+
 /* footer */
 footer {
     background: #117bff;
