@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <button onmouseover=" javasript:bgi1()" ; > bgi1</button>
+    <button onmouseover=" javasript:bgi2()"> bgi2</button>
+    <div id="resultado" style=""></div>
+    <script>
+        function bgi1() {
+
+            document.getElementById("resultado").innerHTML = `<div style="height: 100vh; background-color: skyblue;"></div>`;
+        }
+        function borrar() {
+            document.getElementById("resultado").innerHTML = "";
+        }
+        function bgi2() {
+
+            document.getElementById("resultado").innerHTML = `<div style="height: 100vh; background-color: orangered;"></div>`;
+        }
+    </script>
+</body>
+
+
+</html>

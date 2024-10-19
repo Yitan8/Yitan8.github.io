@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav style="background-color: brown; height: 80px; margin-bottom: 10px; display: flex; justify-content: right; align-items: center; padding-left: 250px; padding-right: 250px;">
+        <ul style="list-style: none; display: flex; gap: 30px;">
+            <li style="cursor: pointer;" onmouseover="javascrip: bg1()">Inicio</li>
+            <li style="cursor: pointer;" onmouseover="javascrip: bg2()">Quienes somos</li>
+            <li style="cursor: pointer;" onmouseover="javascrip: bg3()">Contáctanos</li>
+        </ul>
+    </nav>
+    <!-- panel de contactanos -->
+    <main id="main" style="background-color: skyblue; height: 70vh;margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+        <a href="#formulario" style="cursor: pointer; background-color: orange; ">Contáctanos</a>
+    </main>
+<!-- html para armar el grid de platos -->
+    <section style="display: flex; margin-bottom: 10px; justify-content: center; gap: 15px; padding-left: 150px; padding-right: 150px; flex-wrap: wrap;"
+             id="menu">     
+    </section>
+
+    <section>
+        <form id="formulario" onsubmit="enviodedatos(event)"  action="" style="text-align: center;">
+            <div><input type="text" name="" id="nombre" placeholder="Nombres" style="height: 30px;width: 400px;"></div>
+            <div><input type="text" name="" id="apellido" placeholder="Apellidos" style="height: 30px;width: 400px;"></div>
+            <div><input type="email" name="" id="correo" placeholder="e-mail" style="height: 30px;width: 400px;"></div>
+            <div><input type="number" name="" id="dinero" placeholder="contraseña" style="height: 30px;width: 400px;"></div>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2 id="dolares"></h2>
+    </section>
+
+
+    <footer style="height: 40vh; background-color: aqua;">
+
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>

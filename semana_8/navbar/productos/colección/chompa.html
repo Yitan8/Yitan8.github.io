@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección chompas</title>
+    <link rel="shortcut icon" href="../../img/iconW.png" type="image/x-icon">
+    <link rel="stylesheet" href="../productos.css">
+</head>
+<body>
+    <header>
+        <section class="banner">
+            <div class="logo">
+                <a href="#"><img src="../../img/logo más simple.jpg" alt="" width=""></a>
+            </div>
+            <nav class="navigation">
+                <ul class="navlist">
+                    <li class="navitem"><a class="navlink" href="../index.html#portada">Inicio</a></li>
+                    <li class="navitem"><a class="navlink" href="#">Tienda</a></li>
+                    <li class="navitem"><a class="navlink" href="#">Acerca de la tienda</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main >
+        <section id="productos_chompa" style="display: grid; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); gap: 16px;
+        margin:0 auto; padding: 10px 0; max-width: 1300px;">
+            <div style=" width: 100%; padding: 15px; border-radius: 4%; ;box-sizing: border-box;">
+                <div>
+                    <img src="./../img/Chompa Lana Clásica.png" alt="" width="100%" style="border-radius: 4%;">
+                </div>
+                <div>
+                    <p>${categoria}</p>
+                    <h1>${nombre}</h1>
+                    <p>${precio}</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../productos.js"></script>
+</body>
+
+</html>
