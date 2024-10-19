@@ -113,6 +113,9 @@ nav ul li a {
     filter: contrast(120%);
 
 }
+.slide img:active {
+    cursor: pointer;
+}
 
 footer {
     background: #117bff;
