@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica de elementos semánticos</title>
+    <title>Construir un salón de eventos</title>
 </head>
-<body>
-    <section>
-        <div><h1>Quincy's Tips for Getting a Developer Job</h1>
-        <p>Learning to code is hard, but as Quincy Larson says, <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">You can become a Developer</q></p>
-    </div>
-    <div>
-        <h2>Envisioning Succes</h2>
-        <p><blockquote> Can you imagiine what it would be like to be a successful developer? To have built software systems that people rely upon?</blockquote>
-        -Quincy larson, <cite title="libro x">How to learn to code and get devoloper job full book</cite>
 
-        </p>
-        
-    </div>
-    <div>
-        <p>
-            <blockquote>
-                So much of getting a job is who you know.
-            
-            </blockquote>
-            <blockquote>it's OK to be an introvert, but you do need to push yout boundaries.</blockquote>
-            <blockquote>Create Github, Twitter, LinkedIn and Discord accounts.</blockquote>
-            <blockquote>Go to tech meetups and conferences. Travel if you have to.</blockquote>
-        </p>
-    </div>
-    </section>
+<body>
+    <header>
+        <h1>Event Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#past-events">Past Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <article>
+                <h3>Ai & Machine Lerning Conference 2024</h3>
+                <p>Join us for a deep dive into the latest advancements in artificial intelligence and machine learning.
+                    Industry leaders will share insights and case studies on how AI is transforming various sectors.</p>
+                <time datetime="2024-08-10">Date: August 10, 2024</time> 
+            </article>
+            <article>
+                <h3>Web Development Bootcamp</h3>
+                <p>A hands-on workshop designed for developers looking to enhance their skills in modern web
+                    technologies including React, Node.js, and GraphQL. Perfect for both beginners and experienced
+                    developers.</p>
+                <time datetime="2024-09-05">Date: September 5, 2024</time>
+            </article>
+        </section>
+        <section id="past-events">
+            <h2>Past Events</h2>
+            <article>
+                <h3>Cybersecurity Summit 2024</h3>
+                <p>An event focusing on the latest trends and threats in cybersecurity. Experts discussed strategies for protecting data and ensuring privacy in an increasingly digital world.</p>
+                <time datetime="2024-06-15">Date: June 15, 2024</time>
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg" alt="Un ordenador antiguo marca vector con sistema operativo iBM">
+            </article>
+            <article>
+                <h3>Blockchain Expo 2024</h3>
+                <p>a comprhensive event covering the future of blockchain technology. Topics included decentralized finance (DeFi), smart contracts, and the impact of blockchain on various industries.</p>
+                <time datetime="2024-07-20">Date: July 20, 2024</time>
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg" alt="Muchos cubos ordenados en un espacio">
+            </article>
+        </section>
+
+    </main>
 </body>
+
 </html>
